@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Data files
+*.csv
+*.parquet
+*.h5
+*.hdf5
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# QmtDataTool specific
+output/
+*.json
+.env

@@ -1,0 +1,32 @@
+# ============================================================
+# QmtDataTool 项目依赖
+# ============================================================
+
+# 数据处理核心
+pandas>=2.0.0
+numpy>=1.24.0
+
+# 数据存储
+pyarrow>=12.0.0      # Parquet 读写（推荐格式）
+fastparquet>=2023.0.0  # Parquet 备用引擎
+openpyxl>=3.1.0      # Excel 导出支持
+
+# 进度显示
+tqdm>=4.65.0
+
+# 环境变量管理
+python-dotenv>=1.0.0
+
+# ============================================================
+# 说明
+# ============================================================
+# 
+# xtquant 不在此列表中，因为它由券商QMT提供
+# 需要通过以下步骤获取：
+# 1. 安装券商的 QMT 客户端
+# 2. 运行 `uv run copy_qmt_to_venv.py` 将 xtquant 复制到项目环境
+# 
+# 安装方式：
+#   pip install -r requirements.txt
+#   或
+#   uv add pandas numpy pyarrow fastparquet openpyxl tqdm python-dotenv
